@@ -1,11 +1,12 @@
 <div class="main-container">
+    <p id="title">Counter App</p>
     <div class="container">
-        <button class="btn-dec">-</button>
-        <div class="counter">0</div>
-        <button class="btn-inc">+</button>
+        <button class="btn-dec" (click)="decrement()">-</button>
+        <div class="counter">{{ counterVariable | async }}</div>
+        <button class="btn-inc" (click)="increment()">+</button>
     </div>
 
-    <div class="refresh">
+    <div class="refresh" (click)="reset()">
         Refresh
     </div>
 </div>
