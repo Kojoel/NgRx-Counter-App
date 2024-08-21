@@ -1,7 +1,7 @@
 import { Action, createReducer, on } from "@ngrx/store";
 import { decrement, increment, reset, setCounterValue } from "./counter.actions";
 
-let initialState = 0;
+export let initialState = 0;
 
 export const counterReducer = createReducer(initialState, 
     on(increment, (state) => state + 1 ),

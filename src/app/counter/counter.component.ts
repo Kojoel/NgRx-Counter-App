@@ -12,11 +12,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './counter.component.scss'
 })
 export class CounterComponent {
-  setCounterVal = 0;
 
-  constructor(private store : Store <{counter: number}>) {
-
-  }
+  constructor(private store : Store <{counter: number}>) {}
 
   
 
