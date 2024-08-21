@@ -21,7 +21,7 @@
 }
 
 .container {
-    width: 20rem;
+    width: fit-content;
     height: 7rem;
     background: rgb(22, 22, 22);
     display: flex;
@@ -33,7 +33,7 @@
 }
 
 .btn-inc, .btn-dec {
-    width: 10rem;
+    width: 100px;
     height: 100%;
     background: rgb(44, 44, 44);
     border-radius: 20px;
@@ -63,7 +63,7 @@
 }
 
 .counter {
-    width: 100%;
+    padding: 0 2rem;
     height: 100%;
     background: rgb(44, 44, 44);
     border-radius: 20px;
@@ -133,4 +133,12 @@
 .refresh:active {
     opacity: .5;
     scale: .96;
+}
+
+@media screen and (max-width: 375px) {
+    .counter {
+        max-width: 100px;
+        overflow-x: hidden;
+        font-size: 20px;
+    }
 }
