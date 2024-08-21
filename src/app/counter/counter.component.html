@@ -5,7 +5,10 @@
         <div class="counter">{{ counterVariable | async }}</div>
         <button class="btn-inc" (click)="increment()">+</button>
     </div>
-
+    <div class="spec-value">
+        <label for="setCountValue">Enter specific value</label>
+        <input type="number" name="" id="setCountValue" #value (keyup)="setCounterValue(value.value)">
+    </div>
     <div class="refresh" (click)="reset()">
         Refresh
     </div>
